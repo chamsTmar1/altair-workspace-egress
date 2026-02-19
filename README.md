@@ -1,17 +1,9 @@
 # Altair WorkSpaces Egress Solution
 
-Single-IP egress solution for AWS WorkSpaces to access Altair API.
-
-## Problem
-Altair whitelists only specific public IPs. WorkSpaces need a stable, single egress IP.
-
-## Solution Architecture
-Route all WorkSpaces traffic through a NAT Gateway with one Elastic IP.
+Altair whitelists only specific public IPs. WorkSpaces need a stable, single egress IP. The solution suggested here is to route all WorkSpaces traffic through a NAT Gateway with one Elastic IP.
 
 ### Architecture Diagram
 ![AWS WorkSpaces Egress Architecture](architecture.png)
-
-### Architecture Explanation
 
 The solution implements a **single egress IP architecture** to ensure all AWS WorkSpaces traffic exits through one predictable public IP address that can be whitelisted by Altair.
 
