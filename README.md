@@ -246,7 +246,7 @@ The monthly cost for this solution, excluding AWS WorkSpaces (which depends on u
 - Monitor NAT Gateway data transfer to optimize cross-zone traffic
 - Consider using the monthly billing option for WorkSpaces if usage exceeds 80 hours/month
 
-### 7. Cleanup (Important for cost management!)
+### 6. Cleanup (Important for cost management!)
 ```bash
 # Delete WorkSpaces and Directory from console first!!!
 # Then destroy Terraform resources:
