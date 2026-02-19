@@ -172,7 +172,7 @@ For testing, you need to create AWS WorkSpaces (1-2 instances). Each AWS WorkSpa
 ### Step-by-Step Creation
 
 #### 1. Create Directory (if needed)
-1. Go to AWS Workspace Service console
+1. Go to AWS Workspace Service console and starting creating a Personal Workspace
 2. In step 3, you will be asked to create/select a Directory
 3. Create a new AWS managed Directory
 2. This will redirect you to reate a new **SimpleAD** directory
