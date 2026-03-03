@@ -63,7 +63,7 @@ The solution implements a **single egress IP architecture** to ensure all AWS Wo
 ## Prerequisites
 - AWS CLI configured with appropriate credentials
 - Terraform >= 1.0
-- AWSPowerUserAccess (minimum) + WorkSpaces permissions
+- AWSPowerUserAccess (minimum) + WorkSpaces permissions (better AWSAdministratorAccess)
 
 ## AZ Verification
 **Important:** Before deployment, verify the Availability Zone (AZ) where AWS WorkSpaces service is supported.
