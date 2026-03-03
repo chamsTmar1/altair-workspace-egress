@@ -1,17 +1,9 @@
 # Altair WorkSpaces Egress Solution
 
-Single-IP egress solution for AWS WorkSpaces to access Altair API.
-
-## Problem
-Altair whitelists only specific public IPs. WorkSpaces need a stable, single egress IP.
-
-## Solution Architecture
-Route all WorkSpaces traffic through a NAT Gateway with one Elastic IP.
+Altair whitelists only specific public IPs. WorkSpaces need a stable, single egress IP. The solution suggested here is to route all WorkSpaces traffic through a NAT Gateway with one Elastic IP.
 
 ### Architecture Diagram
 ![AWS WorkSpaces Egress Architecture](arch.png)
-
-### Architecture Explanation
 
 The solution implements a **single egress IP architecture** to ensure all AWS WorkSpaces traffic exits through one predictable public IP address that can be whitelisted by Altair.
 
@@ -180,7 +172,7 @@ For testing, you need to create AWS WorkSpaces (1-2 instances). Each AWS WorkSpa
 ### Step-by-Step Creation
 
 #### 1. Create Directory (if needed)
-1. Go to AWS Workspace Service console
+1. Go to AWS Workspace Service console and starting creating a Personal Workspace
 2. In step 3, you will be asked to create/select a Directory
 3. Create a new AWS managed Directory
 2. This will redirect you to reate a new **SimpleAD** directory
@@ -246,7 +238,7 @@ The monthly cost for this solution, excluding AWS WorkSpaces (which depends on u
 - Monitor NAT Gateway data transfer to optimize cross-zone traffic
 - Consider using the monthly billing option for WorkSpaces if usage exceeds 80 hours/month
 
-### 7. Cleanup (Important for cost management!)
+### 6. Cleanup (Important for cost management!)
 ```bash
 # Delete WorkSpaces and Directory from console first!!!
 # Then destroy Terraform resources:
