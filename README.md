@@ -9,7 +9,7 @@ Altair whitelists only specific public IPs. WorkSpaces need a stable, single egr
 Route all WorkSpaces traffic through a NAT Gateway with one Elastic IP.
 
 ### Architecture Diagram
-![AWS WorkSpaces Egress Architecture](architecture.png)
+![AWS WorkSpaces Egress Architecture](arch.png)
 
 ### Architecture Explanation
 
